@@ -1,0 +1,4 @@
+*.bluej
+*.ctxt
+*.class
+doc/
