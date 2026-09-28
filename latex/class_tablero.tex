@@ -1,0 +1,113 @@
+\doxysection{Tablero Class Reference}
+\hypertarget{class_tablero}{}\label{class_tablero}\index{Tablero@{Tablero}}
+
+
+Administra el estado de la mesa, la secuencia de fichas jugadas y la validacion de jugadas.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_tablero_a8f13f68166859084eeadfa0923025e4f}{Tablero}} (int capacidad\+Maxima)
+\begin{DoxyCompactList}\small\item\em Contructor de la clase \doxylink{class_tablero}{Tablero}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_tablero_a561a2c18818b99dda3020ba80288ed9a}{colocar\+Primera\+Ficha}} (\doxymbox{\hyperlink{class_ficha}{Ficha}} ficha)
+\begin{DoxyCompactList}\small\item\em Colocar la primera ficvha del juego, en tablero vacio. \end{DoxyCompactList}\item 
+\Hypertarget{class_tablero_aea9ba95db77828f2ebfdc2a8b7c5895c}\label{class_tablero_aea9ba95db77828f2ebfdc2a8b7c5895c} 
+void {\bfseries colocar\+Izquierda} (\doxymbox{\hyperlink{class_ficha}{Ficha}} ficha)
+\item 
+\Hypertarget{class_tablero_a1ca178df0a0bfacd714d4a9ab123c140}\label{class_tablero_a1ca178df0a0bfacd714d4a9ab123c140} 
+void {\bfseries colocar\+Derecha} (\doxymbox{\hyperlink{class_ficha}{Ficha}} ficha)
+\item 
+int \doxymbox{\hyperlink{class_tablero_aba577886f456c0de221d9053e5922d3f}{get\+Extremo\+Izquierdo}} ()
+\begin{DoxyCompactList}\small\item\em obtiene el valor de la ficha en el extremo izquierdo libre para seguir la proxima jugada \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_tablero_a455a98bcc2a4edb92acb665fcd34b8db}{get\+Extremo\+Derecho}} ()
+\begin{DoxyCompactList}\small\item\em obtiene el valor de la ficha en el extremo derecho libre para seguir la proxima jugada \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_tablero_af364f02945a088e42dd847a85a8555cd}{get\+Cantidad\+Fichas\+En\+Mesa}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la cantidad de fichas colocadas en la mesa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Administra el estado de la mesa, la secuencia de fichas jugadas y la validacion de jugadas. 
+
+\label{class_tablero_doc-constructors}
+\Hypertarget{class_tablero_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_tablero_a8f13f68166859084eeadfa0923025e4f}\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily \label{class_tablero_a8f13f68166859084eeadfa0923025e4f} 
+Tablero.\+Tablero (\begin{DoxyParamCaption}\item[{int}]{capacidad\+Maxima}{}\end{DoxyParamCaption})}
+
+
+
+Contructor de la clase \doxylink{class_tablero}{Tablero}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad\+Fichas} & Capacidad maxima del tablero \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_tablero_doc-func-members}
+\Hypertarget{class_tablero_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tablero_a561a2c18818b99dda3020ba80288ed9a}\index{Tablero@{Tablero}!colocarPrimeraFicha@{colocarPrimeraFicha}}
+\index{colocarPrimeraFicha@{colocarPrimeraFicha}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{colocarPrimeraFicha()}{colocarPrimeraFicha()}}
+{\footnotesize\ttfamily \label{class_tablero_a561a2c18818b99dda3020ba80288ed9a} 
+void Tablero.\+colocar\+Primera\+Ficha (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_ficha}{Ficha}}}]{ficha}{}\end{DoxyParamCaption})}
+
+
+
+Colocar la primera ficvha del juego, en tablero vacio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ficha} & ficha inicial que empieza \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tablero_af364f02945a088e42dd847a85a8555cd}\index{Tablero@{Tablero}!getCantidadFichasEnMesa@{getCantidadFichasEnMesa}}
+\index{getCantidadFichasEnMesa@{getCantidadFichasEnMesa}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getCantidadFichasEnMesa()}{getCantidadFichasEnMesa()}}
+{\footnotesize\ttfamily \label{class_tablero_af364f02945a088e42dd847a85a8555cd} 
+int Tablero.\+get\+Cantidad\+Fichas\+En\+Mesa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la cantidad de fichas colocadas en la mesa. 
+
+\begin{DoxyReturn}{Returns}
+Entero con el numero de fichas en el tablero 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_a455a98bcc2a4edb92acb665fcd34b8db}\index{Tablero@{Tablero}!getExtremoDerecho@{getExtremoDerecho}}
+\index{getExtremoDerecho@{getExtremoDerecho}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getExtremoDerecho()}{getExtremoDerecho()}}
+{\footnotesize\ttfamily \label{class_tablero_a455a98bcc2a4edb92acb665fcd34b8db} 
+int Tablero.\+get\+Extremo\+Derecho (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtiene el valor de la ficha en el extremo derecho libre para seguir la proxima jugada 
+
+\begin{DoxyReturn}{Returns}
+Entero con el valor del extremo derecho 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_aba577886f456c0de221d9053e5922d3f}\index{Tablero@{Tablero}!getExtremoIzquierdo@{getExtremoIzquierdo}}
+\index{getExtremoIzquierdo@{getExtremoIzquierdo}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getExtremoIzquierdo()}{getExtremoIzquierdo()}}
+{\footnotesize\ttfamily \label{class_tablero_aba577886f456c0de221d9053e5922d3f} 
+int Tablero.\+get\+Extremo\+Izquierdo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtiene el valor de la ficha en el extremo izquierdo libre para seguir la proxima jugada 
+
+\begin{DoxyReturn}{Returns}
+Entero con el valor del extremo izquierdo 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_tablero_8java}{Tablero.\+java}}\end{DoxyCompactItemize}

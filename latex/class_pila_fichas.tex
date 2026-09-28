@@ -1,0 +1,110 @@
+\doxysection{Pila\+Fichas Class Reference}
+\hypertarget{class_pila_fichas}{}\label{class_pila_fichas}\index{PilaFichas@{PilaFichas}}
+
+
+Administra la creacion, mezcla y extraccion de las fivhasd del juego.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_pila_fichas_a55ad3ec863d810be25ffb42864ceaf56}{Pila\+Fichas}} (int limite\+Modo)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{class_pila_fichas}{Pila\+Fichas}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pila_fichas_a9aad48b48918221ac68e497a2c97286c}{inicializar}} (int limite\+Modo)
+\begin{DoxyCompactList}\small\item\em Generae inserta todas las fichas estandar y comodines en la pila. \end{DoxyCompactList}\item 
+\Hypertarget{class_pila_fichas_a65ae00118bd591ba9f90819b55684468}\label{class_pila_fichas_a65ae00118bd591ba9f90819b55684468} 
+void {\bfseries mezclar} ()
+\begin{DoxyCompactList}\small\item\em Mezcla aleatoriamente las fichas de la pila. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} \doxymbox{\hyperlink{class_pila_fichas_ad7910ff5c534699ce9650687571cfd63}{comer\+Ficha}} ()
+\begin{DoxyCompactList}\small\item\em Extrae y retorna una ficha de la pila (comer). \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_pila_fichas_ae41c15b19359381cd9e1f2410701c1e7}{get\+Cantidad\+Actual}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el numero total de fichas restantes en la pila. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_pila_fichas_a1917a4ddc0955071f0bdad7a25f8b7c4}{get\+Total\+Fichas}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la capacidad total de fichas con la. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Administra la creacion, mezcla y extraccion de las fivhasd del juego. 
+
+\label{class_pila_fichas_doc-constructors}
+\Hypertarget{class_pila_fichas_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pila_fichas_a55ad3ec863d810be25ffb42864ceaf56}\index{PilaFichas@{PilaFichas}!PilaFichas@{PilaFichas}}
+\index{PilaFichas@{PilaFichas}!PilaFichas@{PilaFichas}}
+\doxysubsubsection{\texorpdfstring{PilaFichas()}{PilaFichas()}}
+{\footnotesize\ttfamily \label{class_pila_fichas_a55ad3ec863d810be25ffb42864ceaf56} 
+Pila\+Fichas.\+Pila\+Fichas (\begin{DoxyParamCaption}\item[{int}]{limite\+Modo}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de \doxylink{class_pila_fichas}{Pila\+Fichas}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maximo\+Modo} & Valor maximo de las fichas segun el modo \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_pila_fichas_doc-func-members}
+\Hypertarget{class_pila_fichas_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pila_fichas_ad7910ff5c534699ce9650687571cfd63}\index{PilaFichas@{PilaFichas}!comerFicha@{comerFicha}}
+\index{comerFicha@{comerFicha}!PilaFichas@{PilaFichas}}
+\doxysubsubsection{\texorpdfstring{comerFicha()}{comerFicha()}}
+{\footnotesize\ttfamily \label{class_pila_fichas_ad7910ff5c534699ce9650687571cfd63} 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} Pila\+Fichas.\+comer\+Ficha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Extrae y retorna una ficha de la pila (comer). 
+
+\begin{DoxyReturn}{Returns}
+La ultima \doxylink{class_ficha}{Ficha} disponible o null si la pila esta vacia 
+\end{DoxyReturn}
+\Hypertarget{class_pila_fichas_ae41c15b19359381cd9e1f2410701c1e7}\index{PilaFichas@{PilaFichas}!getCantidadActual@{getCantidadActual}}
+\index{getCantidadActual@{getCantidadActual}!PilaFichas@{PilaFichas}}
+\doxysubsubsection{\texorpdfstring{getCantidadActual()}{getCantidadActual()}}
+{\footnotesize\ttfamily \label{class_pila_fichas_ae41c15b19359381cd9e1f2410701c1e7} 
+int Pila\+Fichas.\+get\+Cantidad\+Actual (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el numero total de fichas restantes en la pila. 
+
+\begin{DoxyReturn}{Returns}
+Entero con la cantidad de fichas disponibles 
+\end{DoxyReturn}
+\Hypertarget{class_pila_fichas_a1917a4ddc0955071f0bdad7a25f8b7c4}\index{PilaFichas@{PilaFichas}!getTotalFichas@{getTotalFichas}}
+\index{getTotalFichas@{getTotalFichas}!PilaFichas@{PilaFichas}}
+\doxysubsubsection{\texorpdfstring{getTotalFichas()}{getTotalFichas()}}
+{\footnotesize\ttfamily \label{class_pila_fichas_a1917a4ddc0955071f0bdad7a25f8b7c4} 
+int Pila\+Fichas.\+get\+Total\+Fichas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la capacidad total de fichas con la. 
+
+\begin{DoxyReturn}{Returns}
+Entero con la capacidad total 
+\end{DoxyReturn}
+\Hypertarget{class_pila_fichas_a9aad48b48918221ac68e497a2c97286c}\index{PilaFichas@{PilaFichas}!inicializar@{inicializar}}
+\index{inicializar@{inicializar}!PilaFichas@{PilaFichas}}
+\doxysubsubsection{\texorpdfstring{inicializar()}{inicializar()}}
+{\footnotesize\ttfamily \label{class_pila_fichas_a9aad48b48918221ac68e497a2c97286c} 
+void Pila\+Fichas.\+inicializar (\begin{DoxyParamCaption}\item[{int}]{limite\+Modo}{}\end{DoxyParamCaption})}
+
+
+
+Generae inserta todas las fichas estandar y comodines en la pila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limite\+Modo} & Valor maximo del modo elegido \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_pila_fichas_8java}{Pila\+Fichas.\+java}}\end{DoxyCompactItemize}

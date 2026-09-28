@@ -1,0 +1,26 @@
+#BlueJ class context
+#Sun Sep 27 16:43:33 CST 2026
+comment0.target=Ficha
+comment0.text=\r\n @class Ficha\r\n @brief Estructuras de datos para gestionar los valores, condici\u00F3n de comod\u00EDn y orientaci\u00F3n de una ficha.\r\n
+comment1.params=valor1 valor2 esComodin
+comment1.target=Ficha(int, int, boolean)
+comment1.text=\r\n @brief Constructor de la ficha\r\n @param valor1 Valor del primer lado de la ficha\r\n @param valor2 Valor del segundo lado de la ficha\r\n @param esComodin Indica si la ficha cumple como comodin.\r\n
+comment2.target=int getValor1()
+comment2.text=\r\n @brief Obtiene el primer valor de las ficha.\r\n @return entero con el valor 1\r\n
+comment3.target=int getValor2()
+comment3.text=\r\n @brief Obtiene el segundo valor de las ficha.\r\n @return entero con el valor 2\r\n
+comment4.target=boolean esComodin()
+comment4.text=\r\n @brief consulta si la ficha es comodin o no\r\n @return esComodin\r\n
+comment5.target=boolean esDoble()
+comment5.text=\r\n @brief consulta si la ficha es doble\r\n @return true si ambos lados son iguales, false si no\r\n
+comment6.params=valorMaximoTablero
+comment6.target=int obtenerPuntosMano(int)
+comment6.text=\r\n @brief para calcular los puntos que aporta la ficha al perdedor de una ronda\r\n @param valorMaximoTablero Puntuacion maxima del modo (6,7,8) que asigana si la ficha es comodin\r\n @return Suma de lados si es ficha normal o el valor maximo si es comodin\r\n
+comment7.params=valor
+comment7.target=boolean coincideCon(int)
+comment7.text=\r\n @brief Verificar si la ficha coincide con un extremo del tablero.\r\n @param valor N\u00FAmero presente en el extremo del tablero.\r\n @return true si es comod\u00EDn o si alguno de sus lados coincide con el valor.\r\n
+comment8.target=void voltear()
+comment8.text=\r\n @brief invierte la posocion de valor1 y valor2, para acomplar la ficha al, tablero\r\n
+comment9.target=java.lang.String toString()
+comment9.text=\r\n @brief Genera la ficha en formato string\r\n @return Cadena de texto con el formato [C|x] para comodin o [A|B] para fichas normales\r\n
+numComments=10

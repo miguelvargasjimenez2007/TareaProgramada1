@@ -1,0 +1,8 @@
+#BlueJ class context
+#Sun Sep 27 17:43:06 CST 2026
+comment0.target=Partida
+comment0.text=\r\n @class Partida\r\n @brief Administra los participantes, la pila de fichas, el tablero y la puntuacion requerida para ganar\r\n
+comment1.params=nombreJugador1 esVirtual1 nombreJugador2 esVirtual2 valorMaximo usarComodines
+comment1.target=Partida(java.lang.String, boolean, java.lang.String, boolean, int, boolean)
+comment1.text=\r\n @brief Constructor de la clase Partida\r\n @details Inicializa la pila de fichas, calcula la capacidad del sistema e instancia los participantes y el tablero de juego\r\n @param nombreJugador1 Nombre del primer jugador\r\n @param esVirtual1 true si el jugador 1 es IA, false si es humano\r\n @param nombreJugador2 Nombre del segundo jugador\r\n @param esVirtual2 true si el jugador 2 es IA, false si es humano\r\n @param valorMaximo Valor mas alto segun el modo seleccionado(6,7,8)\r\n @param usarComodines Indica si la partida incluye fichas de tipo comodin\r\n
+numComments=2

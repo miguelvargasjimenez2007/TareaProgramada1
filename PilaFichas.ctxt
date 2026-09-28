@@ -1,0 +1,19 @@
+#BlueJ class context
+#Sun Sep 27 17:25:14 CST 2026
+comment0.target=PilaFichas
+comment0.text=\r\n @class PilaFichas\r\n @brief Administra la creacion, mezcla y extraccion de las fivhasd del juego\r\n
+comment1.params=limiteModo
+comment1.target=PilaFichas(int)
+comment1.text=\r\n @brief Constructor de PilaFichas\r\n @param maximoModo Valor maximo de las fichas segun el modo\r\n
+comment2.params=limiteModo
+comment2.target=void inicializar(int)
+comment2.text=\r\n @brief Generae inserta todas las fichas estandar y comodines en la pila\r\n @param limiteModo Valor maximo del modo elegido\r\n
+comment3.target=void mezclar()
+comment3.text=\r\n @brief Mezcla aleatoriamente las fichas de la pila\r\n
+comment4.target=Ficha comerFicha()
+comment4.text=\r\n @brief Extrae y retorna una ficha de la pila (comer)\r\n @return La ultima Ficha disponible o null si la pila esta vacia\r\n
+comment5.target=int getCantidadActual()
+comment5.text=\r\n @brief Obtiene el numero total de fichas restantes en la pila\r\n @return Entero con la cantidad de fichas disponibles\r\n
+comment6.target=int getTotalFichas()
+comment6.text=\r\n @brief Obtiene la capacidad total de fichas con la \r\n @return Entero con la capacidad total\r\n
+numComments=7

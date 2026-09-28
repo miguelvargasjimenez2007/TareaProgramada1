@@ -1,0 +1,23 @@
+#BlueJ class context
+#Sun Sep 27 17:43:06 CST 2026
+comment0.target=Tablero
+comment0.text=\r\n @class Tablero\r\n @brief Administra el estado de la mesa, la secuencia de fichas jugadas y la validacion de jugadas\r\n
+comment1.params=capacidadMaxima
+comment1.target=Tablero(int)
+comment1.text=\r\n @brief Contructor de la clase Tablero\r\n @param cantidadFichas Capacidad maxima del tablero\r\n
+comment2.params=ficha
+comment2.target=void colocarPrimeraFicha(Ficha)
+comment2.text=\r\n @brief Colocar la primera ficvha del juego, en tablero vacio\r\n @param Ficha ficha inicial que empieza\r\n
+comment3.params=ficha
+comment3.target=void colocarIzquierda(Ficha)
+comment3.text=\r\n \r\n
+comment4.params=ficha
+comment4.target=void colocarDerecha(Ficha)
+comment4.text=\r\n \r\n
+comment5.target=int getExtremoIzquierdo()
+comment5.text=\r\n @brief obtiene el valor de la ficha en el extremo izquierdo libre para seguir la proxima jugada\r\n @return Entero con el valor del extremo izquierdo\r\n
+comment6.target=int getExtremoDerecho()
+comment6.text=\r\n @brief obtiene el valor de la ficha en el extremo derecho     libre para seguir la proxima jugada\r\n @return Entero con el valor del extremo derecho\r\n
+comment7.target=int getCantidadFichasEnMesa()
+comment7.text=\r\n @brief Obtiene la cantidad de fichas colocadas en la mesa.\r\n @return Entero con el numero de fichas en el tablero\r\n
+numComments=8

@@ -1,0 +1,36 @@
+#BlueJ class context
+#Sun Sep 27 17:29:04 CST 2026
+comment0.target=Jugador
+comment0.text=\r\n @class Jugador\r\n @brief Administra la mano de fichas y jugadas \r\n
+comment1.params=nombre esIA capacidadMaxima
+comment1.target=Jugador(java.lang.String, boolean, int)
+comment1.text=\r\n \r\n
+comment10.params=puntos
+comment10.target=void sumarPuntaje(int)
+comment10.text=\r\n @brief Suma una cantidaqd de puntos con el total acumulado del jugador\r\n @param puntos Puntos obtenidos en la ronda finalizada\r\n
+comment11.target=int getCantidadFichas()
+comment11.text=\r\n @brief Cantidad actual de fivhas en mano\r\n @return Entero con la cantidad de fichas en mano\r\n
+comment12.params=indice
+comment12.target=Ficha getFicha(int)
+comment12.text=\r\n @brief Consulta una ficha en su posicion (indice)\r\n @param indice Posicion del arreglo mano\r\n @return La ficha en la posicion indicada o null si no existe\r\n
+comment2.params=ficha
+comment2.target=void recibirFicha(Ficha)
+comment2.text=\r\n@brief Agrega una ficha extraida de las fichas en la mesa sin estar jugando (de la pila) a la mano\r\n@param ficha Ficha a agregar\r\n
+comment3.params=extremoIzquierdo extremoDerecho
+comment3.target=boolean tieneJugadaValida(int, int)
+comment3.text=\r\n @brief  Evalua si el jugador tiene en mano una ficha que pueda jugar\r\n @param extremoIzquierdo Valor actual del extremo izquierdo del tablero\r\n @param extremoDerecho Valor actual del extremo derecho del tablero\r\n @return true si es valida, flase si no es valida\r\n
+comment4.params=indice
+comment4.target=Ficha jugarFicha(int)
+comment4.text=\r\n @brief Retira una ficha de la mano del jugador para der juagada\r\n @param indice Posicion de la ficha en el arreglo mano\r\n @return Ficha a jugar o null si el indice es invalido\r\n
+comment5.params=valorMaximoTablero
+comment5.target=int calcularPuntosMano(int)
+comment5.text=\r\n@brief Calcula la suma total de puntos de las fichas restantes en mano.\r\n@param valorMaximoTablero Limite del modo(6,7,8), para evaluar comodines\r\n@return Suma de puntos contenidos en la mano\r\n
+comment6.target=void mostrarMano()
+comment6.text=\r\n @brief Moatrar en consola las fichas actuales disponibles en la mano\r\n
+comment7.target=java.lang.String getNombre()
+comment7.text=\r\n @brief Obtiene el nombre del jugados\r\n @return Cadena con el nombre\r\n
+comment8.target=boolean esIA()
+comment8.text=\r\n @brief Indica si el jugador es controlado por la maquina\r\n @return true si es IA, false si es humano\r\n
+comment9.target=int getPuntosAcumulados()
+comment9.text=\r\n @brief Obtieen el acumulado de puntos del jugador\r\n @return Entero con la puntuacion total acumulada\r\n
+numComments=13

@@ -1,0 +1,167 @@
+\doxysection{Ficha Class Reference}
+\hypertarget{class_ficha}{}\label{class_ficha}\index{Ficha@{Ficha}}
+
+
+Estructuras de datos para gestionar los valores, condición de comodín y orientación de una ficha.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_ficha_a5494c4f571e91226add83e5af64c5257}{Ficha}} (int valor1, int valor2, boolean es\+Comodin)
+\begin{DoxyCompactList}\small\item\em Constructor de la ficha. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_ficha_ad4749394e33b5a2e954a2562a8ebe109}{get\+Valor1}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el primer valor de las ficha. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_ficha_abd4284ae8f138296f6a11f4d5c625369}{get\+Valor2}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el segundo valor de las ficha. \end{DoxyCompactList}\item 
+boolean \doxymbox{\hyperlink{class_ficha_a8c46316126eefef55a8d7d308d68510c}{es\+Comodin}} ()
+\begin{DoxyCompactList}\small\item\em consulta si la ficha es comodin o no \end{DoxyCompactList}\item 
+boolean \doxymbox{\hyperlink{class_ficha_ae8e5d6f26c7fbccad9aa48dc098ae2cb}{es\+Doble}} ()
+\begin{DoxyCompactList}\small\item\em consulta si la ficha es doble \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_ficha_a7538d34a14c309c5ad790d7d0b53af06}{obtener\+Puntos\+Mano}} (int valor\+Maximo\+Tablero)
+\begin{DoxyCompactList}\small\item\em para calcular los puntos que aporta la ficha al perdedor de una ronda \end{DoxyCompactList}\item 
+boolean \doxymbox{\hyperlink{class_ficha_afd1015505cc2bdc5b6690c1ab1448858}{coincide\+Con}} (int valor)
+\begin{DoxyCompactList}\small\item\em Verificar si la ficha coincide con un extremo del tablero. \end{DoxyCompactList}\item 
+\Hypertarget{class_ficha_a7420115106230c800030b34971ea368c}\label{class_ficha_a7420115106230c800030b34971ea368c} 
+void {\bfseries voltear} ()
+\begin{DoxyCompactList}\small\item\em invierte la posocion de valor1 y valor2, para acomplar la ficha al, tablero \end{DoxyCompactList}\item 
+String \doxymbox{\hyperlink{class_ficha_ae02f9cbfd932a42f09bbf54fe8a6011a}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Genera la ficha en formato string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estructuras de datos para gestionar los valores, condición de comodín y orientación de una ficha. 
+
+\label{class_ficha_doc-constructors}
+\Hypertarget{class_ficha_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ficha_a5494c4f571e91226add83e5af64c5257}\index{Ficha@{Ficha}!Ficha@{Ficha}}
+\index{Ficha@{Ficha}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{Ficha()}{Ficha()}}
+{\footnotesize\ttfamily \label{class_ficha_a5494c4f571e91226add83e5af64c5257} 
+Ficha.\+Ficha (\begin{DoxyParamCaption}\item[{int}]{valor1}{, }\item[{int}]{valor2}{, }\item[{boolean}]{es\+Comodin}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la ficha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor1} & Valor del primer lado de la ficha \\
+\hline
+{\em valor2} & Valor del segundo lado de la ficha \\
+\hline
+{\em es\+Comodin} & Indica si la ficha cumple como comodin. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_ficha_doc-func-members}
+\Hypertarget{class_ficha_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ficha_afd1015505cc2bdc5b6690c1ab1448858}\index{Ficha@{Ficha}!coincideCon@{coincideCon}}
+\index{coincideCon@{coincideCon}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{coincideCon()}{coincideCon()}}
+{\footnotesize\ttfamily \label{class_ficha_afd1015505cc2bdc5b6690c1ab1448858} 
+boolean Ficha.\+coincide\+Con (\begin{DoxyParamCaption}\item[{int}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Verificar si la ficha coincide con un extremo del tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Número presente en el extremo del tablero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si es comodín o si alguno de sus lados coincide con el valor. 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_a8c46316126eefef55a8d7d308d68510c}\index{Ficha@{Ficha}!esComodin@{esComodin}}
+\index{esComodin@{esComodin}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{esComodin()}{esComodin()}}
+{\footnotesize\ttfamily \label{class_ficha_a8c46316126eefef55a8d7d308d68510c} 
+boolean Ficha.\+es\+Comodin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+consulta si la ficha es comodin o no 
+
+\begin{DoxyReturn}{Returns}
+es\+Comodin 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_ae8e5d6f26c7fbccad9aa48dc098ae2cb}\index{Ficha@{Ficha}!esDoble@{esDoble}}
+\index{esDoble@{esDoble}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{esDoble()}{esDoble()}}
+{\footnotesize\ttfamily \label{class_ficha_ae8e5d6f26c7fbccad9aa48dc098ae2cb} 
+boolean Ficha.\+es\+Doble (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+consulta si la ficha es doble 
+
+\begin{DoxyReturn}{Returns}
+true si ambos lados son iguales, false si no 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_ad4749394e33b5a2e954a2562a8ebe109}\index{Ficha@{Ficha}!getValor1@{getValor1}}
+\index{getValor1@{getValor1}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{getValor1()}{getValor1()}}
+{\footnotesize\ttfamily \label{class_ficha_ad4749394e33b5a2e954a2562a8ebe109} 
+int Ficha.\+get\+Valor1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el primer valor de las ficha. 
+
+\begin{DoxyReturn}{Returns}
+entero con el valor 1 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_abd4284ae8f138296f6a11f4d5c625369}\index{Ficha@{Ficha}!getValor2@{getValor2}}
+\index{getValor2@{getValor2}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{getValor2()}{getValor2()}}
+{\footnotesize\ttfamily \label{class_ficha_abd4284ae8f138296f6a11f4d5c625369} 
+int Ficha.\+get\+Valor2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el segundo valor de las ficha. 
+
+\begin{DoxyReturn}{Returns}
+entero con el valor 2 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_a7538d34a14c309c5ad790d7d0b53af06}\index{Ficha@{Ficha}!obtenerPuntosMano@{obtenerPuntosMano}}
+\index{obtenerPuntosMano@{obtenerPuntosMano}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{obtenerPuntosMano()}{obtenerPuntosMano()}}
+{\footnotesize\ttfamily \label{class_ficha_a7538d34a14c309c5ad790d7d0b53af06} 
+int Ficha.\+obtener\+Puntos\+Mano (\begin{DoxyParamCaption}\item[{int}]{valor\+Maximo\+Tablero}{}\end{DoxyParamCaption})}
+
+
+
+para calcular los puntos que aporta la ficha al perdedor de una ronda 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Maximo\+Tablero} & Puntuacion maxima del modo (6,7,8) que asigana si la ficha es comodin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Suma de lados si es ficha normal o el valor maximo si es comodin 
+\end{DoxyReturn}
+\Hypertarget{class_ficha_ae02f9cbfd932a42f09bbf54fe8a6011a}\index{Ficha@{Ficha}!toString@{toString}}
+\index{toString@{toString}!Ficha@{Ficha}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_ficha_ae02f9cbfd932a42f09bbf54fe8a6011a} 
+String Ficha.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Genera la ficha en formato string. 
+
+\begin{DoxyReturn}{Returns}
+Cadena de texto con el formato \+[C\texorpdfstring{$\vert$}{|}x] para comodin o \+[A\texorpdfstring{$\vert$}{|}B] para fichas normales 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_ficha_8java}{Ficha.\+java}}\end{DoxyCompactItemize}

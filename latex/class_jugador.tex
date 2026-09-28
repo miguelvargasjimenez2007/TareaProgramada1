@@ -1,0 +1,205 @@
+\doxysection{Jugador Class Reference}
+\hypertarget{class_jugador}{}\label{class_jugador}\index{Jugador@{Jugador}}
+
+
+Administra la mano de fichas y jugadas.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_jugador_a4d47747e5705dc0c4be1ddb8e7fbcb15}\label{class_jugador_a4d47747e5705dc0c4be1ddb8e7fbcb15} 
+{\bfseries Jugador} (String nombre, boolean es\+IA, int capacidad\+Maxima)
+\item 
+void \doxymbox{\hyperlink{class_jugador_ac1fe82dc747cb896622b52fcc708fc44}{recibir\+Ficha}} (\doxymbox{\hyperlink{class_ficha}{Ficha}} ficha)
+\begin{DoxyCompactList}\small\item\em Agrega una ficha extraida de las fichas en la mesa sin estar jugando (de la pila) a la mano. \end{DoxyCompactList}\item 
+boolean \doxymbox{\hyperlink{class_jugador_a32d0112a37f6d8475132ecc2ebd6f13e}{tiene\+Jugada\+Valida}} (int extremo\+Izquierdo, int extremo\+Derecho)
+\begin{DoxyCompactList}\small\item\em Evalua si el jugador tiene en mano una ficha que pueda jugar. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} \doxymbox{\hyperlink{class_jugador_a0ec316b61f9da6fed70e5fa38d8bdcb6}{jugar\+Ficha}} (int indice)
+\begin{DoxyCompactList}\small\item\em Retira una ficha de la mano del jugador para der juagada. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_jugador_af7946baee50917ae346a8c02564e9336}{calcular\+Puntos\+Mano}} (int valor\+Maximo\+Tablero)
+\begin{DoxyCompactList}\small\item\em Calcula la suma total de puntos de las fichas restantes en mano. \end{DoxyCompactList}\item 
+\Hypertarget{class_jugador_a389c7fa67d4165cd20ad4144d03aa945}\label{class_jugador_a389c7fa67d4165cd20ad4144d03aa945} 
+void {\bfseries mostrar\+Mano} ()
+\begin{DoxyCompactList}\small\item\em Moatrar en consola las fichas actuales disponibles en la mano. \end{DoxyCompactList}\item 
+String \doxymbox{\hyperlink{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d}{get\+Nombre}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del jugados. \end{DoxyCompactList}\item 
+boolean \doxymbox{\hyperlink{class_jugador_a6006c5b8bef088b7dd671db1c6faf5bf}{es\+IA}} ()
+\begin{DoxyCompactList}\small\item\em Indica si el jugador es controlado por la maquina. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_jugador_a3108fe153b0f129b0c167aaa744c71ef}{get\+Puntos\+Acumulados}} ()
+\begin{DoxyCompactList}\small\item\em Obtieen el acumulado de puntos del jugador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_jugador_a1b08147cae6de43d07a28c2cdf623958}{sumar\+Puntaje}} (int puntos)
+\begin{DoxyCompactList}\small\item\em Suma una cantidaqd de puntos con el total acumulado del jugador. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_jugador_a9d14b518cd03cb2bf20caf5e7b604d36}{get\+Cantidad\+Fichas}} ()
+\begin{DoxyCompactList}\small\item\em Cantidad actual de fivhas en mano. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} \doxymbox{\hyperlink{class_jugador_a6d5ce71cf2029d41f2aa9f092476e2a1}{get\+Ficha}} (int indice)
+\begin{DoxyCompactList}\small\item\em Consulta una ficha en su posicion (indice). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Administra la mano de fichas y jugadas. 
+
+\label{class_jugador_doc-func-members}
+\Hypertarget{class_jugador_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jugador_af7946baee50917ae346a8c02564e9336}\index{Jugador@{Jugador}!calcularPuntosMano@{calcularPuntosMano}}
+\index{calcularPuntosMano@{calcularPuntosMano}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{calcularPuntosMano()}{calcularPuntosMano()}}
+{\footnotesize\ttfamily \label{class_jugador_af7946baee50917ae346a8c02564e9336} 
+int Jugador.\+calcular\+Puntos\+Mano (\begin{DoxyParamCaption}\item[{int}]{valor\+Maximo\+Tablero}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la suma total de puntos de las fichas restantes en mano. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Maximo\+Tablero} & Limite del modo(6,7,8), para evaluar comodines \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Suma de puntos contenidos en la mano 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a6006c5b8bef088b7dd671db1c6faf5bf}\index{Jugador@{Jugador}!esIA@{esIA}}
+\index{esIA@{esIA}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{esIA()}{esIA()}}
+{\footnotesize\ttfamily \label{class_jugador_a6006c5b8bef088b7dd671db1c6faf5bf} 
+boolean Jugador.\+es\+IA (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Indica si el jugador es controlado por la maquina. 
+
+\begin{DoxyReturn}{Returns}
+true si es IA, false si es humano 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a9d14b518cd03cb2bf20caf5e7b604d36}\index{Jugador@{Jugador}!getCantidadFichas@{getCantidadFichas}}
+\index{getCantidadFichas@{getCantidadFichas}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getCantidadFichas()}{getCantidadFichas()}}
+{\footnotesize\ttfamily \label{class_jugador_a9d14b518cd03cb2bf20caf5e7b604d36} 
+int Jugador.\+get\+Cantidad\+Fichas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cantidad actual de fivhas en mano. 
+
+\begin{DoxyReturn}{Returns}
+Entero con la cantidad de fichas en mano 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a6d5ce71cf2029d41f2aa9f092476e2a1}\index{Jugador@{Jugador}!getFicha@{getFicha}}
+\index{getFicha@{getFicha}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getFicha()}{getFicha()}}
+{\footnotesize\ttfamily \label{class_jugador_a6d5ce71cf2029d41f2aa9f092476e2a1} 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} Jugador.\+get\+Ficha (\begin{DoxyParamCaption}\item[{int}]{indice}{}\end{DoxyParamCaption})}
+
+
+
+Consulta una ficha en su posicion (indice). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Posicion del arreglo mano \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La ficha en la posicion indicada o null si no existe 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d}\index{Jugador@{Jugador}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d} 
+String Jugador.\+get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el nombre del jugados. 
+
+\begin{DoxyReturn}{Returns}
+Cadena con el nombre 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a3108fe153b0f129b0c167aaa744c71ef}\index{Jugador@{Jugador}!getPuntosAcumulados@{getPuntosAcumulados}}
+\index{getPuntosAcumulados@{getPuntosAcumulados}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getPuntosAcumulados()}{getPuntosAcumulados()}}
+{\footnotesize\ttfamily \label{class_jugador_a3108fe153b0f129b0c167aaa744c71ef} 
+int Jugador.\+get\+Puntos\+Acumulados (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtieen el acumulado de puntos del jugador. 
+
+\begin{DoxyReturn}{Returns}
+Entero con la puntuacion total acumulada 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a0ec316b61f9da6fed70e5fa38d8bdcb6}\index{Jugador@{Jugador}!jugarFicha@{jugarFicha}}
+\index{jugarFicha@{jugarFicha}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{jugarFicha()}{jugarFicha()}}
+{\footnotesize\ttfamily \label{class_jugador_a0ec316b61f9da6fed70e5fa38d8bdcb6} 
+\doxymbox{\hyperlink{class_ficha}{Ficha}} Jugador.\+jugar\+Ficha (\begin{DoxyParamCaption}\item[{int}]{indice}{}\end{DoxyParamCaption})}
+
+
+
+Retira una ficha de la mano del jugador para der juagada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Posicion de la ficha en el arreglo mano \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_ficha}{Ficha} a jugar o null si el indice es invalido 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_ac1fe82dc747cb896622b52fcc708fc44}\index{Jugador@{Jugador}!recibirFicha@{recibirFicha}}
+\index{recibirFicha@{recibirFicha}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{recibirFicha()}{recibirFicha()}}
+{\footnotesize\ttfamily \label{class_jugador_ac1fe82dc747cb896622b52fcc708fc44} 
+void Jugador.\+recibir\+Ficha (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_ficha}{Ficha}}}]{ficha}{}\end{DoxyParamCaption})}
+
+
+
+Agrega una ficha extraida de las fichas en la mesa sin estar jugando (de la pila) a la mano. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficha} & \doxylink{class_ficha}{Ficha} a agregar \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_a1b08147cae6de43d07a28c2cdf623958}\index{Jugador@{Jugador}!sumarPuntaje@{sumarPuntaje}}
+\index{sumarPuntaje@{sumarPuntaje}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{sumarPuntaje()}{sumarPuntaje()}}
+{\footnotesize\ttfamily \label{class_jugador_a1b08147cae6de43d07a28c2cdf623958} 
+void Jugador.\+sumar\+Puntaje (\begin{DoxyParamCaption}\item[{int}]{puntos}{}\end{DoxyParamCaption})}
+
+
+
+Suma una cantidaqd de puntos con el total acumulado del jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em puntos} & Puntos obtenidos en la ronda finalizada \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_a32d0112a37f6d8475132ecc2ebd6f13e}\index{Jugador@{Jugador}!tieneJugadaValida@{tieneJugadaValida}}
+\index{tieneJugadaValida@{tieneJugadaValida}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{tieneJugadaValida()}{tieneJugadaValida()}}
+{\footnotesize\ttfamily \label{class_jugador_a32d0112a37f6d8475132ecc2ebd6f13e} 
+boolean Jugador.\+tiene\+Jugada\+Valida (\begin{DoxyParamCaption}\item[{int}]{extremo\+Izquierdo}{, }\item[{int}]{extremo\+Derecho}{}\end{DoxyParamCaption})}
+
+
+
+Evalua si el jugador tiene en mano una ficha que pueda jugar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extremo\+Izquierdo} & Valor actual del extremo izquierdo del tablero \\
+\hline
+{\em extremo\+Derecho} & Valor actual del extremo derecho del tablero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si es valida, flase si no es valida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_jugador_8java}{Jugador.\+java}}\end{DoxyCompactItemize}
