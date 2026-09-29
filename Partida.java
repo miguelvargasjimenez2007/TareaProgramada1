@@ -8,7 +8,7 @@
  * @brief Administra los participantes, la pila de fichas, el tablero y la puntuacion requerida para ganar
  */
 public class Partida{
-    
+    //los atributos deben de estar en doxy
     private static final int puntosParaGanar = 70;
     private static final int fichasIniciales = 7;
     

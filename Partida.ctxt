@@ -1,5 +1,5 @@
 #BlueJ class context
-#Sun Sep 27 17:43:06 CST 2026
+#Mon Sep 28 17:56:50 CST 2026
 comment0.target=Partida
 comment0.text=\r\n @class Partida\r\n @brief Administra los participantes, la pila de fichas, el tablero y la puntuacion requerida para ganar\r\n
 comment1.params=nombreJugador1 esVirtual1 nombreJugador2 esVirtual2 valorMaximo usarComodines
